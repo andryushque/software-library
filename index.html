@@ -16,47 +16,142 @@
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
-          <div class="logo-wrapper">
+          <div class="header__logo logo-wrapper">
             <img src="images/logo.svg" alt="Logo: Ehya" class="logo" />
           </div>
-          <nav class="navbar header__navbar">
-            <ul class="navbar-menu topmenu">
-              <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Home</a>
-              </li>
-              <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">
-                  Landings
-                  <img
-                    src="images/icons/angle-down.svg"
-                    alt="Icon: arrow down"
-                    class="navbar-menu__icon"
-                  />
-                </a>
-              </li>
-              <li class="navbar-menu__item topmenu__item">
-                <a href="#" class="navbar-menu__link">
-                  Pages
-                  <img
-                    src="images/icons/angle-down.svg"
-                    alt="Icon: arrow down"
-                    class="navbar-menu__icon"
-                  />
-                </a>
-                <ul class="navbar-menu__submenu submenu submenu--level-1">
-                  <li class="submenu__item">
-                    <a href="#" class="submenu__link submenu__link--level-1"
-                      >Company</a
-                    ><svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="submenu__icon"
-                        d="M6.125 5.21484C6.37109
+          <div class="header-menu">
+            <nav class="navbar header__navbar">
+              <ul class="navbar-menu topmenu">
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Home</a>
+                </li>
+                <li class="navbar-menu__item topmenu__item">
+                  <a href="#" class="navbar-menu__link">
+                    Landings
+                    <img
+                      src="images/icons/angle-down.svg"
+                      alt="Icon: arrow down"
+                      class="navbar-menu__icon"
+                    />
+                  </a>
+                  <ul class="navbar-menu__submenu submenu submenu--level-1">
+                    <li class="submenu__item topmenu topmenu--level-2">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Services</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
+                                      4.96875 6.37109 4.55859 6.125 4.28516L2.40625
+                                      0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
+                                      0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
+                                      1.87891 0.847656 2.125L3.5 4.77734L0.847656
+                                      7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
+                                      8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
+                                      2.40625 8.93359L6.125 5.21484Z"
+                          fill="#183B56"
+                        />
+                      </svg>
+                      <ul class="submenu submenu--level-2">
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Software Library</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Insurance</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Converence</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Rental</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Modal with Image</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Illustration</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Products</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
+                                      4.96875 6.37109 4.55859 6.125 4.28516L2.40625
+                                      0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
+                                      0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
+                                      1.87891 0.847656 2.125L3.5 4.77734L0.847656
+                                      7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
+                                      8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
+                                      2.40625 8.93359L6.125 5.21484Z"
+                          fill="#183B56"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-menu__item topmenu__item">
+                  <a href="#" class="navbar-menu__link">
+                    Pages
+                    <img
+                      src="images/icons/angle-down.svg"
+                      alt="Icon: arrow down"
+                      class="navbar-menu__icon"
+                    />
+                  </a>
+                  <ul class="navbar-menu__submenu submenu submenu--level-1">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Company</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
                       4.96875 6.37109 4.55859 6.125 4.28516L2.40625
                       0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
                       0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
@@ -64,67 +159,47 @@
                       7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
                       8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
                       2.40625 8.93359L6.125 5.21484Z"
-                        fill="#183B56"
-                      />
-                    </svg>
-                  </li>
-                  <li class="submenu__item">
-                    <a href="#" class="submenu__link submenu__link--level-1"
-                      >Career</a
-                    ><svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path class="submenu__icon" " d="M6.125 5.21484C6.37109
-                      4.96875 6.37109 4.55859 6.125 4.28516L2.40625
-                      0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
-                      0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
-                      1.87891 0.847656 2.125L3.5 4.77734L0.847656
-                      7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
-                      8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
-                      2.40625 8.93359L6.125 5.21484Z" fill="#183B56"/>
-                    </svg>
-                  </li>
-                  <li class="submenu__item">
-                    <a href="#" class="submenu__link submenu__link--level-1"
-                      >Blog</a
-                    ><svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="submenu__icon"
-                        d="M6.125 5.21484C6.37109
-                      4.96875 6.37109 4.55859 6.125 4.28516L2.40625
-                      0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
-                      0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
-                      1.87891 0.847656 2.125L3.5 4.77734L0.847656
-                      7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
-                      8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
-                      2.40625 8.93359L6.125 5.21484Z"
-                        fill="#183B56"
-                      />
-                    </svg>
-                  </li>
-                  <li class="submenu__item topmenu--level-2">
-                    <a href="#" class="submenu__link submenu__link--level-1"
-                      >Utility - Sign in</a
-                    ><svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="submenu__icon"
-                        d="M6.125 5.21484C6.37109
+                          fill="#183B56"
+                        />
+                      </svg>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Career</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d=" M6.125 5.21484C6.37109
+                        4.96875 6.37109 4.55859 6.125 4.28516L2.40625
+                        0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
+                        0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
+                        1.87891 0.847656 2.125L3.5 4.77734L0.847656
+                        7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
+                        8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
+                        2.40625 8.93359L6.125 5.21484Z"
+                          fill="#183B56"
+                        />
+                      </svg>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Blog</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
                       4.96875 6.37109 4.55859 6.125 4.28516L2.40625
                       0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
                       0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
@@ -132,55 +207,23 @@
                       7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
                       8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
                       2.40625 8.93359L6.125 5.21484Z"
-                        fill="#183B56"
-                      />
-                    </svg>
-                    <ul class="submenu submenu--level-2">
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link submenu__link--level-2"
-                          >Basic</a
-                        >
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link submenu__link--level-2"
-                          >Right Cover</a
-                        >
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link submenu__link--level-2"
-                          >Left Cover</a
-                        >
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link submenu__link--level-2"
-                          >Modal</a
-                        >
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link submenu__link--level-2"
-                          >Modal with Image</a
-                        >
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link submenu__link--level-2"
-                          >Illustration</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="submenu__item">
-                    <a href="#" class="submenu__link submenu__link--level-1"
-                      >Utility - Sign up</a
-                    ><svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="submenu__icon"
-                        d="M6.125 5.21484C6.37109
+                          fill="#183B56"
+                        />
+                      </svg>
+                    </li>
+                    <li class="submenu__item topmenu topmenu--level-2">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Utility - Sign in</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
                       4.96875 6.37109 4.55859 6.125 4.28516L2.40625
                       0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
                       0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
@@ -188,23 +231,67 @@
                       7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
                       8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
                       2.40625 8.93359L6.125 5.21484Z"
-                        fill="#183B56"
-                      />
-                    </svg>
-                  </li>
-                  <li class="submenu__item">
-                    <a href="#" class="submenu__link submenu__link--level-1"
-                      >Utility - Password Reset</a
-                    ><svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="submenu__icon"
-                        d="M6.125 5.21484C6.37109
+                          fill="#183B56"
+                        />
+                      </svg>
+                      <ul class="submenu submenu--level-2">
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Basic</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Right Cover</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Left Cover</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Modal</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Modal with Image</a
+                          >
+                        </li>
+                        <li class="submenu__item">
+                          <a
+                            href="#"
+                            class="submenu__link submenu__link--level-2"
+                            >Illustration</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Utility - Sign up</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
                       4.96875 6.37109 4.55859 6.125 4.28516L2.40625
                       0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
                       0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
@@ -212,23 +299,23 @@
                       7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
                       8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
                       2.40625 8.93359L6.125 5.21484Z"
-                        fill="#183B56"
-                      />
-                    </svg>
-                  </li>
-                  <li class="submenu__item">
-                    <a href="#" class="submenu__link submenu__link--level-1"
-                      >Utility - Error 404</a
-                    ><svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="submenu__icon"
-                        d="M6.125 5.21484C6.37109
+                          fill="#183B56"
+                        />
+                      </svg>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Utility - Password Reset</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
                       4.96875 6.37109 4.55859 6.125 4.28516L2.40625
                       0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
                       0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
@@ -236,28 +323,341 @@
                       7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
                       8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
                       2.40625 8.93359L6.125 5.21484Z"
-                        fill="#183B56"
-                      />
-                    </svg>
-                  </li>
-                </ul>
-              </li>
-              <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link submenu__link--level-1"
-                  >Docs</a
-                >
-              </li>
-              <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link submenu__link--level-1"
-                  >Help</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <!-- /.header-nav -->
-          <button class="button header__button">
-            Get it now
+                          fill="#183B56"
+                        />
+                      </svg>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link--level-1"
+                        >Utility - Error 404</a
+                      ><svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="submenu__icon"
+                          d="M6.125 5.21484C6.37109
+                      4.96875 6.37109 4.55859 6.125 4.28516L2.40625
+                      0.566406C2.13281 0.320312 1.72266 0.320312 1.47656
+                      0.566406L0.847656 1.19531C0.601562 1.46875 0.601562
+                      1.87891 0.847656 2.125L3.5 4.77734L0.847656
+                      7.40234C0.601562 7.64844 0.601562 8.05859 0.847656
+                      8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703
+                      2.40625 8.93359L6.125 5.21484Z"
+                          fill="#183B56"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Docs</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Help</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.header-nav -->
+            <button class="button header__button">
+              Get it now
+            </button>
+          </div>
+          <button class="button mmenu-button">
+            <span class="mmenu-button__line"></span>
+            <span class="mmenu-button__line"></span>
+            <span class="mmenu-button__line"></span>
           </button>
+          <div class="mmenu">
+            <button class="button mmenu-close">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6.6949L15.2222 0.472085C15.6518 0.0425082 16.3482 0.0425082 16.7778 0.472085C17.1767 0.870978 17.2052 1.50001 16.8633 1.93178L16.7778 2.02772L10.555 8.2499L16.7778 14.4721C17.1767 14.871 17.2052 15.5 16.8633 15.9318L16.7778 16.0277C16.3789 16.4266 15.7499 16.4551 15.3181 16.1132L15.2222 16.0277L9 9.8049L2.77782 16.0277C2.37893 16.4266 1.7499 16.4551 1.31813 16.1132L1.22218 16.0277C0.823291 15.6288 0.794799 14.9998 1.13671 14.568L1.22218 14.4721L7.445 8.2499L1.22218 2.02772C0.823291 1.62883 0.794799 0.999797 1.13671 0.568028L1.22218 0.472085C1.62108 0.0731922 2.25011 0.0446999 2.68188 0.386608L2.77782 0.472085L9 6.6949L15.2222 0.472085L9 6.6949Z"
+                  fill="#183B56"
+                />
+              </svg>
+            </button>
+            <div class="mmenu-accordion">
+              <ul class="mmenu-accordion__list">
+                <li class="mmenu-accordion__item">
+                  <a class="mmenu-accordion__link" href="#">Home</a>
+                </li>
+                <li class="mmenu-accordion__item">
+                  <a class="mmenu-accordion__link" href="#">
+                    <span class="mmenu-accordion__link-text">Landings</span>
+                    <svg
+                      width="7"
+                      height="10"
+                      viewBox="0 0 7 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="mmenu-accordion__icon"
+                        d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                        fill="#183B56"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="mmenu-accordion__list">
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text">Services</span>
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                      <ul class="mmenu-accordion__list">
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#"
+                            >Software Library</a
+                          >
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#"
+                            >Insurance</a
+                          >
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#"
+                            >Converence</a
+                          >
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#">Rental</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text">Products</span>
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mmenu-accordion__item">
+                  <a class="mmenu-accordion__link" href="#">
+                    <span class="mmenu-accordion__link-text">Pages</span>
+                    <svg
+                      width="7"
+                      height="10"
+                      viewBox="0 0 7 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="mmenu-accordion__icon"
+                        d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                        fill="#183B56"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="mmenu-accordion__list">
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text">Company</span>
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text">Career</span>
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text">Blog</span>
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text"
+                          >Utility - Sign in</span
+                        >
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                      <ul class="mmenu-accordion__list">
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#">Basic</a>
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#"
+                            >Right Cover</a
+                          >
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#"
+                            >Left Cover</a
+                          >
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#">Modal</a>
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#"
+                            >Modal with Image</a
+                          >
+                        </li>
+                        <li class="mmenu-accordion__item">
+                          <a class="mmenu-accordion__link" href="#"
+                            >Illustration</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text"
+                          >Utility - Sign up</span
+                        >
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text"
+                          >Utility - Password Reset</span
+                        >
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mmenu-accordion__item">
+                      <a class="mmenu-accordion__link" href="#">
+                        <span class="mmenu-accordion__link-text"
+                          >Utility - Error 404</span
+                        >
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="mmenu-accordion__icon"
+                            d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z"
+                            fill="#183B56"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mmenu-accordion__item">
+                  <a class="mmenu-accordion__link" href="#">Doc</a>
+                </li>
+              </ul>
+            </div>
+            <button class="button mmenu__button mmenu__button--mobile">
+              Get it now
+            </button>
+          </div>
         </div>
         <!-- /.header-wrapper -->
       </div>
@@ -275,7 +675,11 @@
             interfaces
           </h2>
           <div class="hero-buttons hero__buttons">
-            <button class="button hero-button hero__button hero__button--light">
+            <a
+              class="button hero-button hero__button hero__button--light"
+              href="https://github.com/andryushque"
+              target="_blank"
+            >
               <svg
                 width="16"
                 height="16"
@@ -290,7 +694,7 @@
                 />
               </svg>
               <span class="hero-button__text">View on Github</span>
-            </button>
+            </a>
             <button
               class="button hero-button hero__button hero__button--transparent"
             >
@@ -415,5 +819,10 @@
       <!-- /.container -->
     </section>
     <!-- /.features -->
+
+    <!-- Подключение JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/accordion-menu.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

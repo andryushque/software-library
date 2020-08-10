@@ -1,0 +1,131 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .submenu
+    &--level-2
+      top: -40%
+      left: -250px
+
+@media (max-width: 991px)
+  .container
+    max-width: 704px
+  .header
+    &-wrapper
+      position: relative
+      padding-top: 8px
+      height: 64px
+    &__logo
+      margin-left: 27px
+    &-menu
+      display: none
+    &__navbar
+      margin-left: 0
+  .navbar
+    &-menu
+      flex-direction: column
+      align-items: flex-start
+      &__link 
+        color: $dark
+  .hero
+    background-position: center -72px
+    &-wrapper
+      padding-top: 113px
+    &-title
+      font-size: 48px
+      line-height: 60px
+    &__title
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom: 45px
+    &__info
+      margin-bottom: 80px
+    &-cards
+      justify-content: space-between
+    &-card
+      flex-direction: column
+      max-width: 344px
+      &:nth-child(odd)
+        margin-right: 0
+      &__image-wrapper
+        width: 40px
+        margin-bottom: 24px
+      &__text
+        margin-left: 0
+  .mmenu
+    &--visible
+      display: flex
+    &-button
+      display: flex
+
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 90%
+  .header
+    &-wrapper
+      padding-top: 0
+  .hero
+    background-position: center -64px
+    &-wrapper
+      padding-top: 40px
+    &-title
+      font-size: 32px
+      line-height: 40px
+    &__title
+      margin-bottom: 48px
+    &-subtitle
+      font-size: 16px
+      line-height: 28px
+    &__subtitle
+      margin-bottom: 40px
+    &-buttons
+      flex-direction: column
+    &__button
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 12px
+      &:last-child
+        margin-bottom: 0
+    &__info
+      font-size: 14px
+      line-height: 24px
+      margin-bottom: 46px
+    &-cards
+      justify-content: space-between
+      justify-content: center
+    &__cards
+      margin-bottom: 24px
+    &-card
+      flex-direction: column
+      align-items: center
+      text-align: center
+      max-width: 466px
+      padding: 32px 22px
+      &:nth-child(odd)
+        margin-right: 0
+      &:last-child
+        margin-bottom: 0
+      &__image-wrapper
+        width: 40px
+        margin-bottom: 24px
+      &__text
+        margin-left: 0
+
+@media (max-width: 575px)
+  .hero
+    &-card
+      &__title
+        margin-bottom: 11px
+        font-size: 20px
+        line-height: 24px
+      &__info
+        font-size: 16px
+        line-height: 28px
+    &-link
+      font-size: 16px
+      line-height: 22px
+  .mmenu
+    &--visible
+      width: 100%
+      right: 0
+      top: 11px
