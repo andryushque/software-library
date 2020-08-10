@@ -811,14 +811,58 @@
     </section>
     <!-- /.hero -->
 
-    <section class="features">
+    <section class="install">
       <div class="container">
-        <div class="features-wrapper"></div>
-        <!-- /.features-wrapper -->
+        <div class="install-wrapper">
+          <h3 class="install-suptitle install__suptitle">
+            Quickstart
+          </h3>
+          <h2 class="install-title install__title">
+            Awesome isn't it? Let's dive in!
+          </h2>
+          <p class="install-text install__text">
+            Install packages with npm or other methods. Package will be
+            installed to components/ directory and ready to use for your
+            project.
+          </p>
+          <div class="install-tabs install__tabs">
+            <ul class="tabs install__tabs-wrapper">
+              <li data-target="#npm" class="tabs__item tabs__item--active">
+                npm
+              </li>
+              <li data-target="#bower" class="tabs__item">bower</li>
+              <li data-target="#yarn" class="tabs__item">Yarn</li>
+              <li data-target="#nuget" class="tabs__item">NuGet</li>
+              <li data-target="#spm" class="tabs__item">spm</li>
+              <li data-target="#meteor" class="tabs__item">meteor</li>
+            </ul>
+            <ul class="content install__content">
+              <li id="npm" class="content__item content__item--active">
+                <span class="content__text">npm install</span> ehya.js|
+              </li>
+              <li id="bower" class="content__item">bower code</li>
+              <li id="yarn" class="content__item">Yarn code</li>
+              <li id="nuget" class="content__item">NuGet code</li>
+              <li id="spm" class="content__item">spm code</li>
+              <li id="meteor" class="content__item">meteor code</li>
+            </ul>
+          </div>
+          <div class="install-info">
+            <span class="install-info__text">
+              <img class="install-info__icon" src="images/icons/requires-icon.png" alt="Icon: requires" />
+              Requires node, npm and git
+            </span>
+            <span class="install-info__text">
+              <img class="install-info__icon" src="images/icons/requires-icon.png" alt="Icon: requires" />
+              Latest release v1.8.9
+            </span>
+          </div>
+        </div>
+        <!-- /.install-wrapper -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.features -->
+    <!-- /.install -->
 
     <!-- Подключение JS -->
     <script src="js/jquery-3.5.1.min.js"></script>
