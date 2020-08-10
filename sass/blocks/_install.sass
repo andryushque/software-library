@@ -1,11 +1,13 @@
 .install
   padding-top: 142px
   padding-bottom: 96px
+  width: 100%
   &-wrapper
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: center
+    width: 100%
   &-suptitle
     font-style: normal
     font-weight: 600
@@ -42,18 +44,24 @@
     margin-top: 0
     margin-bottom: 64px
   &-tabs
-    min-width: 612px
+    width: 612px
+    max-width: 100%
     min-height: 160px
     padding: 32px
     background: #0F1F2B
     border-radius: 16px
   &__tabs-wrapper
+    width: 548px
+    max-width: 100%
     margin-top: 0
-    margin-bottom: 32px
+    padding-bottom: 16px
+    margin-bottom: 16px
+    overflow: auto
   &__tabs
     margin-bottom: 24px
   &-info
-    width: 612px
+    min-width: 612px
+    max-width: 100%
     display: flex
     align-items: center
     justify-content: flex-start
@@ -61,6 +69,11 @@
       display: flex
       align-items: center
       margin-right: 32px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: #183B56
     &__icon
       display: block
       width: 24px
@@ -71,10 +84,13 @@
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 0
+  padding-left: 0
+  padding-right: 0
+  padding-top: 0
   list-style-type: none
   &__item
     padding: 8px 16px
+    margin-right: 12px
     background: rgba($light, 0.05)
     border-radius: 6px
     font-style: normal
@@ -84,6 +100,8 @@
     text-align: center
     color: #5A7184
     cursor: pointer
+    &:last-child
+      margin-right: 0
     &--active
       background: $light
       color: #183B56
