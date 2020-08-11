@@ -64,4 +64,27 @@ $(document).ready(function () {
   check.click(function () {
     check.not(this).prop("checked", false);
   });
+
+  /*=== Reviews Slider ===*/
+  var reviewsSwiper = new Swiper(".reviews-slider", {
+    loop: true,
+    speed: 500,
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    keyboard: {
+      enabled: true,
+    },
+  });
+
+  $(".swiper-container").hover(
+    function () {
+      reviewsSwiper.autoplay.stop();
+    },
+    function () {
+      reviewsSwiper.autoplay.start();
+    }
+  );
 });
