@@ -8,7 +8,12 @@
   .features
     &-card
       width: 48.5%
-
+  .sponsors
+    &-info
+      padding-left: 32px
+    &-items
+      padding-right: 32px
+      padding-left: 0
 
 @media (max-width: 991px)
   .container
@@ -143,6 +148,30 @@
       margin-bottom: 12px
       &:last-child
         margin-bottom: 0
+  .sponsors
+    padding-top: 98px
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      padding-top: 0
+    &-info
+      max-width: 100%
+      padding-left: 0
+      padding-top: 0
+      align-items: center
+    &__info
+      margin-bottom: 40px
+    &-items
+      max-width: 100%
+      padding-right: 0
+    &-title
+      max-width: 100%
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+    &__title
+      margin-bottom: 28px
+
 
 @media (max-width: 767px)
   .container
@@ -296,7 +325,13 @@
       margin-bottom: 15px
       &:last-child
         margin-bottom: 0
-
+  .sponsors
+    &__item
+      margin-right: 16px
+      margin-left: 16px
+      margin-bottom: 16px
+    &:first-child
+      margin-bottom: 32px
 
 @media (max-width: 575px)
   .hero
@@ -351,3 +386,37 @@
         line-height: 20px
         &:last-child
           margin-bottom: 0
+  .sponsors
+    padding-top: 80px
+    padding-bottom: 64px
+    &__info
+      margin-bottom: 48px
+    &-title
+      font-size: 28px
+      line-height: 36px
+    &__title
+      margin-bottom: 20px
+    &-items
+      position: relative
+      height: 463px
+      width: 288px
+      margin: 0 auto
+    &__item
+      position: absolute
+      margin: 0
+      &:nth-child(2)
+        top: 0
+        left: 96px
+      &:nth-child(4)
+        top: 105px
+        left: 0
+      &:nth-child(3)
+        top: 150px
+        right: 0
+      &:nth-child(1)
+        top: 240px
+        left: 0
+      &:nth-child(5)
+        top: 323px
+        right: 0
+        
