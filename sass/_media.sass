@@ -58,6 +58,7 @@
       display: flex
   .install
     padding-top: 96px
+    padding-bottom: 48px
     &__suptitle
       margin-bottom: 20px
     &-title
@@ -72,6 +73,35 @@
       margin-bottom: 48px
     &__tabs
       margin-bottom: 20px
+  .information
+    &-bottom
+      padding-top: 2px
+    &-title
+      font-size: 32px
+      line-height: 40px
+    &__title
+      margin-bottom: 20px
+    &-text
+      max-width: 640px
+    &__text
+      margin-bottom: 56px
+    &-cards
+      width: 100%
+      padding-left: 16px
+      padding-right: 16px
+    .cards
+      &-wrapper
+        flex-direction: column
+    &-card
+      width: 100%
+      min-height: 241px
+      padding: 36px 28px 40px
+      border-right: none
+      border-bottom: 1px solid rgba(#E5EAF4, 0.5)
+      &:last-child
+        border-bottom: none
+    &__icon
+      margin-bottom: 24px
 
 @media (max-width: 767px)
   .container
@@ -162,7 +192,35 @@
     &__info
       margin-right: 0
       margin-bottom: 8px
-
+  .information
+    &-top
+      height: 0
+    &-bottom
+      padding-top: 80px
+    &-title
+      font-size: 28px
+      line-height: 36px
+    &__title
+      margin-bottom: 16px
+    &-text
+      max-width: 100%
+      font-size: 16px
+      line-height: 28px
+    &__text
+      margin-bottom: 36px
+    &-cards
+      padding-left: 0
+      padding-right: 0
+    &-card
+      min-height: 200px
+      padding: 40px 16px 30px
+    &__number
+      margin-bottom: 4px
+      font-size: 32px
+      line-height: 42px
+    &__cardtitle
+      font-size: 16px
+      line-height: 28px
 
 @media (max-width: 575px)
   .hero
