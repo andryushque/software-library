@@ -1,0 +1,169 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 100
+    background: rgba(#000, 0.8)
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 488px
+    min-width: 400px
+    max-height: 100vh
+    z-index: 101
+    padding: 48px 64px
+    border-radius: 8px
+    background-color: $light
+    color: $dark
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+      overflow-y: auto
+  &__close
+    position: absolute
+    top: 24px
+    right: 24px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    margin-top: 0
+    margin-bottom: 35px
+    font-family: "HKGrotesk", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #183B56
+  
+  &__button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    min-height: 56px
+    margin-bottom: 24px
+    padding: 0 8px
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: $light
+    background: $primary
+    border-radius: 8px
+    &--google
+      margin-bottom: 32px
+  .button
+    &__text
+      display: block
+      width: 100%
+      text-align: center
+  .icon
+    &-wrapper
+      height: 42px
+      width: auto
+      min-width: 42px
+  &__icon
+    width: 100%
+    height: 100%
+  &__line
+    position: relative
+    margin-bottom: 32px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $dark
+    &::before, &::after
+      content: ""
+      position: absolute
+      top: 50%
+      width: 64px
+      height: 2px
+      background: #E5EAF4
+    &::before
+      left: -72px
+    &::after
+      right: -72px
+
+  &-form
+    display: flex
+    flex-direction: column
+    width: 100%
+    &__bottom
+      display: flex
+      align-items: center
+      justify-content: flex-start
+  &__label
+    margin-bottom: 12px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #5A7184
+  &__input
+    margin-bottom: 24px
+    height: 56px
+    width: 100%
+    padding: 0 20px
+    background: transparent
+    border: 1px solid #C3CAD9
+    border-radius: 8px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $dark
+    &::placeholder
+      color: #959EAD
+  &__checkbox-terms
+    display: flex
+    align-items: center
+    margin-top: 0
+    margin-bottom: 32px
+  &__checkbox
+    background: $light
+    border: 1px solid #E5EAF4
+    box-sizing: border-box
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.16)
+    border-radius: 4px
+  &__terms
+    margin-left: 10px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: #5A7184
+  &__info
+    margin-right: 8px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: #5A7184
+  &__sign-up
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    color: $primary
+    text-decoration: none
