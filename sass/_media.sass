@@ -144,6 +144,26 @@
       &::after
         right: -25px
 
+  .modal
+    &__dialog
+      max-width: 576px
+      min-width: 320px
+      width: 90%
+      padding: 24px 32px
+    &__title
+      margin-bottom: 24px
+    &__line
+      margin-bottom: 24px
+      &::before, &::after
+        width: 0
+    &-form
+      &__bottom
+        flex-direction: column
+    &__info
+      margin-right: 0
+      margin-bottom: 8px
+
+
 @media (max-width: 575px)
   .hero
     &-card

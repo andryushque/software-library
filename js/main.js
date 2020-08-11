@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   $(document).keydown(function (e) {
     if (e.key == "Escape") {
-      $(".mmenu").toggleClass("mmenu--visible");
+      $(".mmenu").removeClass("mmenu--visible");
     }
   });
 
@@ -29,4 +29,33 @@ $(document).ready(function () {
     $(activeContent).addClass("content__item--active");
     $(this).addClass("tabs__item--active");
   });
+
+  /*=== Modal Form ===*/
+  var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+  $(document).keydown(function (e) {
+    if (e.key == "Escape") {
+      closeModal(event);
+    }
+  });
+
+  function openModal() {
+    console.log("aaaaaand open!");
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+    $("body").addClass("modal-open");
+  }
+
+  function closeModal(event) {
+    console.log("aaaaaand close!");
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+    $("body").removeClass("modal-open");
+  }
 });
