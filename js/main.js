@@ -58,4 +58,10 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
     $("body").removeClass("modal-open");
   }
+
+  /*=== FAQ Accordion ===*/
+  var check = $(".check");
+  check.click(function () {
+    check.not(this).prop("checked", false);
+  });
 });
