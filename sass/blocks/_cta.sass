@@ -1,0 +1,75 @@
+.cta
+  padding: 120px 0
+  background: url("../images/background-cta.png") center center / cover no-repeat
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-title
+    margin-top: 0
+    margin-bottom: 0
+    max-width: 450px
+    font-family: "HKGrotesk", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $light
+  &-buttons
+    display: flex
+    justify-content: flex-end
+    align-items: center
+  &__button
+    height: 56px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 2000px
+    border: 2px solid $light
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    &--light
+      min-width: 223px
+      background-color: $light
+      color: $dark
+      .cta
+        &-button
+          &__icon
+            fill: $dark
+          &__text
+            margin-left: 5px
+            margin-right: -10px
+      &:hover
+        background-color: transparent
+        color: $light
+        transition: background-color 0.3s ease, color 0.3s ease
+        .cta
+          &-button
+            &__icon
+              fill: $light
+              transition: fill 0.3s ease
+    
+    &--transparent
+      margin-left: 16px
+      min-width: 177px
+      background-color: transparent
+      color: $light
+      .cta
+        &-button
+          &__icon
+            fill: $light
+          &__text
+            margin-right: 10px
+      &:hover
+        background-color: $light
+        color: $dark
+        transition: background-color 0.3s ease, color 0.3s ease
+        .cta
+          &-button
+            &__icon
+              fill: $dark
+              transition: fill 0.3s ease
