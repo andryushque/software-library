@@ -243,6 +243,23 @@
       &__image
         margin-left: 14px
 
+  .cta
+    padding-top: 80px
+    padding-bottom: 80px
+    &-wrapper
+      flex-direction: column
+    &-title
+      text-align: center
+    &__title
+      margin-bottom: 44px
+    &__button
+      &--light
+        .cta
+          &-button
+            &__text
+              margin-left: 12px
+              margin-right: 0
+
 
 @media (max-width: 767px)
   .container
@@ -561,3 +578,29 @@
     &-accordion
       padding-left: 24px
       padding-right: 24px
+
+  .cta
+    &-title
+      font-size: 28px
+      line-height: 36px
+    &__title
+      margin-bottom: 40px
+    &-buttons
+      flex-direction: column
+    &-button
+      &__text
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+    &__button
+      height: 48px
+      &--light
+        min-width: 207px
+        margin-bottom: 12px
+        .cta
+          &-button
+            &__text
+              margin-left: 10px
+              margin-right: 0
+      &--transparent
+        margin-left: 0
