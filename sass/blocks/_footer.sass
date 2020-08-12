@@ -3,3 +3,64 @@
   padding-bottom: 145px
   background-color: $light
   color: $dark
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-main
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+  &-social
+    display: flex
+    flex-direction: column
+    width: 25%
+  &__social
+    &-text
+      max-width: 250px
+      margin-top: 0
+      margin-bottom: 30px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      color: #5A7184
+    &-links
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &-link
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      margin-right: 7px
+      background: rgba(#5A7184, 0.1)
+      text-decoration: none
+      &:hover
+        background: $primary
+        transition: background 0.3s ease
+        .footer
+          &__social
+            &-icon
+              fill: $light
+              transition: fill 0.3s ease
+    &-icon
+      fill: #5A7184
+  &-logo
+    width: 90px
+    height: auto
+  &__logo
+    width: 100%
+    height: auto
+    margin-bottom: 28px
+
+  &-links
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    width: 75%
