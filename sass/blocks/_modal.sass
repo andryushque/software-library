@@ -109,14 +109,16 @@
       align-items: center
       justify-content: flex-start
   &__label
+    margin-top: 24px
     margin-bottom: 12px
     font-style: normal
     font-weight: 600
     font-size: 16px
     line-height: 22px
     color: #5A7184
+    &:first-child
+      margin-top: 0
   &__input
-    margin-bottom: 24px
     height: 56px
     width: 100%
     padding: 0 20px
@@ -131,9 +133,10 @@
     &::placeholder
       color: #959EAD
   &__checkbox-terms
+    position: relative
     display: flex
     align-items: center
-    margin-top: 0
+    margin-top: 24px
     margin-bottom: 32px
   &__checkbox
     background: $light

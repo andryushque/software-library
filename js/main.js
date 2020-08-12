@@ -93,4 +93,28 @@ $(document).ready(function () {
       reviewsSwiper.autoplay.start();
     }
   );
+
+  /*=== Modal Validation ===*/
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Please enter at least 2 characters",
+        },
+        email: {
+          required: "Please specify your email address",
+          email: "Email address format: name@domain.com",
+        },
+        password: {
+          required: "Please enter your password",
+          minlength: "Your password must be at least 8 characters long",
+        },
+        terms: {
+          required: "You must agree to the terms and conditions",
+        },
+      },
+    });
+  });
 });
