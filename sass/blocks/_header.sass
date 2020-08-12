@@ -13,6 +13,7 @@
   &-menu
     display: flex
     align-items: center
+    height: 100%
   &__navbar
     margin-left: auto
   &__button
@@ -114,13 +115,11 @@
 
 .topmenu
   &__item
-    &::before
-      content: ""
-      display: block
-      height: 30px
-      position: absolute
-      top: 15px
-      width: 100%
+    .navbar
+      &-menu
+        &__link
+          padding-bottom: 30px
+
   li:hover 
     .submenu
       &--level-1
