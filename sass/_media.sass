@@ -38,7 +38,9 @@
       &__link 
         color: $dark
   .hero
-    background-position: center -72px
+    border-top: transparent
+    background-clip: border-box
+    background-position: center -280px
     &-wrapper
       padding-top: 113px
     &-title
@@ -69,21 +71,25 @@
       display: flex
   
   .install
-    padding-top: 96px
+    padding-top: 70px
     padding-bottom: 48px
     &__suptitle
       margin-bottom: 20px
+      margin-right: 16px
     &-title
       font-size: 32px
       line-height: 40px
     &__title
       margin-bottom: 20px
+      margin-right: 16px
     &-text
       font-size: 18px
       line-height: 32px
     &__text
-      margin-bottom: 48px
+      margin-bottom: 44px
     &__tabs
+      margin-bottom: 24px
+    &__tabs-wrapper
       margin-bottom: 20px
   
   .information
@@ -115,6 +121,8 @@
         border-bottom: none
     &__icon
       margin-bottom: 24px
+    &__badge
+      margin-bottom: 0
   
   .features
     padding-top: 96px
@@ -136,8 +144,9 @@
       display: flex
       flex-direction: column
       align-items: center
-      padding: 32px 56px 40px
+      padding: 31px 56px 40px
       &__title
+        font-weight: bold
         margin-bottom: 5px
         font-size: 24px
         line-height: 32px
@@ -147,19 +156,21 @@
         margin-bottom: 22px
         text-align: center
       &__link
-        font-size: 16px
-        line-height: 22px
+        font-size: 18px
+        line-height: 25px
     &__card
-      margin-bottom: 12px
+      margin-bottom: 16px
       &:last-child
         margin-bottom: 0
   
   .sponsors
-    padding-top: 98px
+    padding-top: 100px
+    padding-bottom: 0
     &-wrapper
       flex-direction: column
       align-items: center
       padding-top: 0
+      padding-bottom: 0
     &-info
       max-width: 100%
       padding-left: 0
@@ -179,8 +190,11 @@
       margin-bottom: 28px
 
   .faq
+    &-top
+      height: 150px
+      background: url(../images/background-faq.png) center -20px no-repeat
     &-bottom
-      padding-top: 30px
+      padding-top: 32px
       padding-bottom: 96px
     &-wrapper
       flex-direction: column
@@ -207,7 +221,7 @@
       max-width: 500px
       text-align: center
     &__text
-      margin-bottom: 32px
+      margin-bottom: 28px
     &-items
       display: flex
       justify-content: space-between
@@ -229,6 +243,11 @@
       width: 100%
       max-width: 672px
       margin-top: 0
+      &__block
+        margin-bottom: 15px
+      .tab
+        &-content
+          margin-bottom: 24px
 
   .reviews
     padding-top: 64px
@@ -283,6 +302,7 @@
         margin-bottom: 48px
     &__main
       margin-bottom: 62px
+
 
 @media (max-width: 767px)
   .container
