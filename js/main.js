@@ -42,7 +42,6 @@ $(document).ready(function () {
   });
 
   function openModal() {
-    console.log("aaaaaand open!");
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
@@ -50,7 +49,6 @@ $(document).ready(function () {
   }
 
   function closeModal(event) {
-    console.log("aaaaaand close!");
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
@@ -58,6 +56,13 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
     $("body").removeClass("modal-open");
   }
+
+  $(document).click(function (event) {
+    // if you click on anything except the modal itself or the "open modal" link, close the modal
+    if (!$(event.target).closest(".modal__dialog, .js-modal-button").length) {
+      closeModal(event);
+    }
+  });
 
   /*=== FAQ Accordion ===*/
   var check = $(".check");
