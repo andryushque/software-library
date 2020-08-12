@@ -15,6 +15,7 @@
       padding-right: 32px
       padding-left: 0
 
+
 @media (max-width: 991px)
   .container
     max-width: 704px
@@ -228,6 +229,21 @@
       max-width: 672px
       margin-top: 0
 
+  .reviews
+    padding-top: 64px
+    padding-bottom: 96px
+    &::before
+      top: 8px
+    &-slider
+      &__item
+        max-width: 640px
+      &__text
+        margin-bottom: 42px
+    &-profile
+      &__image
+        margin-left: 14px
+
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -408,6 +424,18 @@
       &:last-child
         margin-bottom: 0
 
+  .reviews
+    padding-top: 108px
+    padding-bottom: 70px
+    &::before
+      top: 36px
+    &-slider
+      &__text
+        margin-bottom: 24px
+        font-size: 28px
+        line-height: 44px
+
+
 @media (max-width: 575px)
   .hero
     &-card
@@ -527,6 +555,8 @@
         font-weight: 600
         font-size: 16px
         line-height: 22px
+        &::after
+          display: none
 
     &-accordion
       padding-left: 24px
