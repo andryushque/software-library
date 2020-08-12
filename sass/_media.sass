@@ -312,16 +312,30 @@
       margin-bottom: 40px
     &-buttons
       flex-direction: column
+    &-button
+      &__text
+        font-size: 16px
+        line-height: 22px
     &__button
+      min-height: 48px
+      min-width: 207px
       margin-left: 0
       margin-right: 0
       margin-bottom: 12px
       &:last-child
         margin-bottom: 0
+      &--transparent
+        .hero
+          &-button
+            &__text
+              margin-left: 0
+              margin-right: 18px
     &__info
+      padding-left: 4px 
       font-size: 14px
       line-height: 24px
       margin-bottom: 46px
+      text-align: left
     &-cards
       justify-content: space-between
       justify-content: center
