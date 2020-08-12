@@ -260,6 +260,28 @@
               margin-left: 12px
               margin-right: 0
 
+  .footer
+    padding-top: 64px
+    padding-bottom: 64px
+    &-wrapper
+      padding-left: 16px
+      padding-right: 16px
+    &-social
+      width: 44%
+      padding-left: 12px
+    &-links
+      width: 56%
+      flex-wrap: wrap
+    &-item
+      width: 50%
+      margin-left: 0
+      &:nth-child(even)
+        padding-left: 5px
+    &__item
+      &:nth-child(-n+2)
+        margin-bottom: 48px
+    &__main
+      margin-bottom: 62px
 
 @media (max-width: 767px)
   .container
@@ -452,6 +474,42 @@
         font-size: 28px
         line-height: 44px
 
+  .footer
+    padding-top: 48px
+    &-main
+      width: 100%
+      flex-direction: column
+      align-items: center
+    &__main
+      margin-bottom: 48px
+    &-social
+      width: 100%
+      align-items: center
+      order: 2
+      padding-left: 0
+    &__social
+      &-text
+        text-align: center
+        margin-bottom: 22px
+        padding-right: 8px
+    &__logo
+      margin-bottom: 12px
+    &-links
+      width: 100%
+      justify-content: center
+    &__links
+      margin-bottom: 46px
+    &-item
+      width: 36%
+      &:nth-child(even)
+        padding-left: 0
+    &__item
+      &:nth-child(-n+2)
+        margin-bottom: 38px
+    .copyright
+      &__image
+        margin-bottom: 12px
+
 
 @media (max-width: 575px)
   .hero
@@ -604,3 +662,28 @@
               margin-right: 0
       &--transparent
         margin-left: 0
+
+  .footer
+    &-wrapper
+      padding-left: 8px
+      padding-right: 8px
+    &__main
+      margin-bottom: 0
+    &__social
+      &-text
+        font-size: 14px
+        line-height: 24px
+    &-item
+      width: 50%
+      &:nth-child(even)
+        padding-left: 8px
+    &__title
+      margin-bottom: 20px
+      font-size: 16px
+      line-height: 22px
+    &__list-item
+      margin-bottom: 15px
+      font-size: 14px
+      line-height: 20px
+    &-copyright
+      display: none
