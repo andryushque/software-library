@@ -35,8 +35,16 @@ $(document).ready(function () {
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+
   $(document).keydown(function (e) {
     if (e.key == "Escape") {
+      closeModal(event);
+    }
+  });
+
+  $(".modal__overlay").click(function (e) {
+    if (!$(e.target).is(".modal__dialog")) {
+      console.log("111");
       closeModal(event);
     }
   });
@@ -56,13 +64,6 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
     $("body").removeClass("modal-open");
   }
-
-  $(document).click(function (event) {
-    // if you click on anything except the modal itself or the "open modal" link, close the modal
-    if (!$(event.target).closest(".modal__dialog, .js-modal-button").length) {
-      closeModal(event);
-    }
-  });
 
   /*=== FAQ Accordion ===*/
   var check = $(".check");
