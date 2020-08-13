@@ -413,7 +413,7 @@
 
   .questions
     position: relative
-    z-index: -5
+    z-index: 1
     &-wrapper
       padding: 97px 27px
     &-title
@@ -424,7 +424,6 @@
     .tab
       padding: 32px 32px 31px
       &-title
-        padding-right: 32px
         &::after
           transform: translateY(-60%)
     .contacts
@@ -687,6 +686,8 @@
 
   .footer
     padding-top: 48px
+    &--light
+      padding-top: 94px
     &-main
       width: 100%
       flex-direction: column
@@ -732,6 +733,7 @@
 
   .premium
     padding-top: 56px
+    padding-bottom: 80px
     &-suptitle
       padding: 2px 12px
       font-size: 14px
@@ -783,6 +785,76 @@
       font-size: 16px
       line-height: 28px
       text-align: center
+
+  .questions
+    &-wrapper
+      padding: 0 0 52px
+      border-top: none
+    &-title
+      font-size: 28px
+      line-height: 36px
+    &__title
+      margin-bottom: 32px
+    .tab
+      padding: 21px 20px 20px 20px
+      margin-bottom: 14px
+      &-title
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        padding-right: 16px
+        &::after
+          transform: translateY(0)
+          top: 0
+      & :checked + .tab-title
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        color: $primary
+      & :checked ~ .tab-content
+        max-width: 96%
+        padding-top: 6px
+        margin-bottom: 4px
+        font-size: 14px
+        line-height: 24px
+
+    .contacts
+      &-title
+        font-size: 24px
+        line-height: 32px
+      &__title
+        margin-bottom: 16px
+      &-info
+        font-size: 16px
+        line-height: 28px
+      &__info
+        margin-bottom: 24px
+      
+      &-card
+        width: 100%
+        min-width: 179px
+        padding: 32px 16px
+      &__card
+        margin-bottom: 14px
+      &-image
+        width: 36px
+        height: 36px
+      &__image
+        margin-bottom: 27px
+      &__link
+        margin-bottom: 8px
+        font-size: 16px
+        line-height: 20px
+      &__text
+        font-size: 14px
+        line-height: 24px
+
+    &-bottom
+      display: none
 
 @media (max-width: 575px)
   .hero
