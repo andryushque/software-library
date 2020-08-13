@@ -117,4 +117,34 @@ $(document).ready(function () {
       },
     });
   });
+
+  /*=== Switch Button ===*/
+  $(function () {
+    $(".plan-switch__button").click(function (e, changeState) {
+      if (changeState === undefined) {
+        $(this).toggleClass("plan-switch__button--on");
+      }
+      if ($(this).hasClass("plan-switch__button--on")) {
+        $(this).trigger("on.switch");
+      } else {
+        $(this).trigger("off.switch");
+      }
+    });
+
+    $(".plan-switch__button").on("on.switch", function () {
+      console.log("Кнопка переключена в состояние on");
+      $(".plan__price--off").removeClass("plan__price--active");
+      $(".plan__price--on").addClass("plan__price--active");
+    });
+
+    $(".plan-switch__button").on("off.switch", function () {
+      console.log("Кнопка переключена в состояние off");
+      $(".plan__price--on").removeClass("plan__price--active");
+      $(".plan__price--off").addClass("plan__price--active");
+    });
+
+    $(".plan-switch__button").each(function () {
+      $(this).triggerHandler("click", false);
+    });
+  });
 });

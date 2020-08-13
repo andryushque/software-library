@@ -1,0 +1,210 @@
+.plan
+  padding-top: 96px
+  padding-bottom: 96px
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+  &-title
+    max-width: 755px
+    font-family: "HKGrotesk", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $dark
+  &__title
+    margin-top: 0
+    margin-bottom: 24px
+  &-subtitle
+    max-width: 680px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    text-align: center
+    color: $dark
+  &__subtitle
+    margin-top: 0
+    margin-bottom: 28px
+
+  &-switch
+    display: flex
+    align-items: center
+    &__text
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #5A7184
+      &:last-child
+        position: relative
+    &__save
+      position: absolute
+      top: 24px
+      left: 0
+      font-family: "HKGrotesk", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 28px
+      letter-spacing: 0.1px
+      color: #36B37E
+
+    &__button
+      position: relative
+      z-index: 0
+      display: inline-block
+      width: 64px
+      height: 36px
+      margin: 0 16px
+      padding: 0
+      border-radius: 18px
+      border: none
+      background: $light
+      box-shadow: 0px 10px 20px rgba(20, 45, 65, 0.08)
+      cursor: pointer
+      transition-duration: 300ms
+      &::after
+        content: ""
+        position: absolute
+        z-index: 1
+        top: 5px
+        left: 5px
+        height: 26px
+        width: 26px
+        border-radius: 50%
+        background: #5A7184
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)
+        transition-duration: 300ms
+      &--on
+        &::after
+          background: linear-gradient(180deg, #35B27D 0%, #28A671 100%)
+          left: 32px
+  &__switch
+    margin-bottom: 88px
+
+  &-cards
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding-left: 60px
+    padding-right: 60px
+  &-card
+    display: flex
+    flex-direction: column
+    width: 320px
+    min-height: 560px
+    padding: 42px 36px 40px
+    background: $light
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+    border-radius: 8px
+    border-top: 3px solid transparent
+    &--standard
+      border-color: #3F598A
+    &--essentials
+      border-color: #36B37E
+    &--premium
+      border-color: $primary
+    &__price
+      margin-bottom: 14px
+
+  &-price
+    display: flex
+    align-items: center
+  &__price
+    display: none
+    font-family: "HKGrotesk", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 52px
+    &--standard
+      color: #183B56
+    &--essentials
+      color: #36B37E
+    &--premium
+      color: $primary
+    &--active
+      display: block
+  &__period
+    margin-left: 2px
+    margin-bottom: -16px
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #5A7184
+
+  &-name
+    font-family: "HKGrotesk", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark
+  &__name
+    margin-top: 0
+    margin-bottom: 12px
+  &-info
+    padding-bottom: 24px
+    border-bottom: 1px solid #E5EAF4
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: #5A7184
+  &__info
+    margin-top: 0
+    margin-bottom: 32px
+
+  &-advantages
+    display: flex
+    flex-direction: column
+  &-advantage
+    display: flex
+    align-items: center
+    &__text
+      margin-left: 12px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: #183B56
+  &-image
+    width: 24px
+    height: 24px
+  &__advantage
+    margin-bottom: 24px
+  &-button
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 248px
+    height: 48px
+    padding-right: 22px
+    padding-left: 24px
+    border: 2px solid $primary
+    border-radius: 2000px
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $primary
+    background-color: $light
+    &:hover, &:active
+      color: $light
+      background-color: $primary
+      transition: background-color 0.3s ease, color 0.3s ease
+      .plan
+        &-button
+          &__icon
+            fill: $light
+            transition: fill 0.3s ease
+  &__button
+    margin-top: auto
+    margin-bottom: 0
