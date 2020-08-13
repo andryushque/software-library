@@ -1,9 +1,13 @@
 .header
-  background-image: url("../images/background-hero.jpg")
-  background-repeat: no-repeat
-  background-position: top center
-  background-size: cover
-  color: $light
+  &--primary
+    background-image: url("../images/background-hero.jpg")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    color: $light
+  &--light
+    background-color: $light
+    color: $dark
   &-wrapper
     display: flex
     align-items: center
@@ -20,18 +24,28 @@
     margin-left: 40px
     min-width: 131px
     min-height: 48px
-    border: 2px solid $light
-    border-radius: 8px
     background-color: transparent
     color: $light
     font-style: normal
     font-weight: bold
     font-size: 16px
     line-height: 22px
-    &:hover, &:focus
+    &--primary
+      border: 2px solid $light
+      border-radius: 8px
+      color: $light
+      &:hover, &:focus
+        color: $primary
+        background-color: $light
+        transition: background-color 0.3s ease, color 0.3s ease
+    &--light
+      border: 2px solid $primary
+      border-radius: 2000px
       color: $primary
-      background-color: $light
-      transition: background-color 0.3s ease, color 0.3s ease
+      &:hover, &:focus
+        color: $light
+        background-color: $primary
+        transition: background-color 0.3s ease, color 0.3s ease
 
 .navbar
   &-menu
@@ -52,10 +66,16 @@
       font-weight: 600
       font-size: 16px
       line-height: 22px
-      color: $light
       text-decoration: none
+      &--primary
+        color: $light
+      &--light
+        color: $dark
     &__icon
-      margin-bottom: 2px
+      &--primary
+        fill: $light
+      &--light
+        fill: $dark
 
 .submenu
   display: none
@@ -165,7 +185,10 @@
       width: 22px
       height: 2px
       padding: 0
-      background-color: $light
+      &--primary
+        background-color: $light
+      &--light
+        background-color: #3A4C66
   &-close
     position: absolute
     top: 15px
