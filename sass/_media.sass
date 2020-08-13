@@ -1,20 +1,22 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+
   .submenu
     &--level-2
       top: -40%
       left: -250px
+
   .features
     &-card
       width: 48.5%
+
   .sponsors
     &-info
       padding-left: 32px
     &-items
       padding-right: 32px
       padding-left: 0
-
 
   .plan
     &-cards
@@ -27,6 +29,7 @@
 @media (max-width: 991px)
   .container
     max-width: 704px
+
   .header
     &-wrapper
       position: relative
@@ -42,12 +45,14 @@
       display: none
     &__navbar
       margin-left: 0
+
   .navbar
     &-menu
       flex-direction: column
       align-items: flex-start
       &__link 
         color: $dark
+
   .hero
     border-top: transparent
     background-clip: border-box
@@ -75,6 +80,7 @@
         margin-bottom: 24px
       &__text
         margin-left: 0
+
   .mmenu
     &--visible
       display: flex
@@ -82,7 +88,7 @@
       display: flex
       &--light
         margin-top: -5px
-  
+
   .install
     padding-top: 70px
     padding-bottom: 48px
@@ -104,7 +110,7 @@
       margin-bottom: 24px
     &__tabs-wrapper
       margin-bottom: 20px
-  
+
   .information
     &-bottom
       padding-top: 2px
@@ -136,7 +142,7 @@
       margin-bottom: 24px
     &__badge
       margin-bottom: 0
-  
+
   .features
     padding-top: 96px
     &__suptitle
@@ -175,7 +181,7 @@
       margin-bottom: 16px
       &:last-child
         margin-bottom: 0
-  
+
   .sponsors
     padding-top: 100px
     padding-bottom: 0
@@ -296,6 +302,8 @@
   .footer
     padding-top: 64px
     padding-bottom: 64px
+    &--light
+      padding-top: 110px
     &-wrapper
       padding-left: 16px
       padding-right: 16px
@@ -315,7 +323,6 @@
         margin-bottom: 48px
     &__main
       margin-bottom: 62px
-
 
   .plan
     position: relative
@@ -373,9 +380,9 @@
       max-width: 248px
       border-radius: 8px
 
-
   .premium
     padding-top: 105px
+    padding-bottom: 96px
     &-suptitle
       font-size: 14px
       line-height: 20px
@@ -404,11 +411,54 @@
       &:last-child
         margin-bottom: 0
 
+  .questions
+    position: relative
+    z-index: -5
+    &-wrapper
+      padding: 97px 27px
+    &-title
+      font-size: 32px
+      line-height: 40px
+    &__title
+      margin-bottom: 50px
+    .tab
+      padding: 32px 32px 31px
+      &-title
+        padding-right: 32px
+        &::after
+          transform: translateY(-60%)
+    .contacts
+      position: relative
+      z-index: -3
+      &-title
+        font-size: 32px
+        line-height: 40px
+      &__info
+        margin-top: 0
+        margin-bottom: 48px
+      &-cards
+        flex-direction: column
+      &__card
+        margin-right: 0
+        margin-left: 0
+        margin-bottom: 18px
+        &:last-child
+          margin-bottom: 0
+
+    &-bottom
+      position: absolute
+      z-index: -4
+      left: 0
+      right: 0
+      bottom: 0
+      background: url(../images/background-plan.png) center top no-repeat
+
 
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 90%
+
   .header
     &-wrapper
       padding-top: 0
@@ -416,12 +466,14 @@
       margin-left: 8px
       &--light
         margin-left: 4px
+
   .mmenu
     &-button
       margin-right: 8px
       &--light
         margin-right: 8px
         margin-top: 0
+
   .hero
     background-position: center -740px
     &-wrapper
@@ -488,17 +540,18 @@
       &__text
         margin-right: 16px
         margin-left: -8px
-  
+
   .install
     &-info
       min-width: 500px
-  
+
   .tabs
     &__item
       padding: 6px 12px
       margin-right: 8px
       font-size: 14px
       line-height: 20px
+
   .content
     font-size: 14px
     line-height: 20px
@@ -525,7 +578,7 @@
     &__info
       margin-right: 0
       margin-bottom: 8px
-  
+
   .information
     &-top
       height: 0
@@ -555,7 +608,7 @@
     &__cardtitle
       font-size: 16px
       line-height: 28px
-  
+
   .features
     padding-top: 90px
     &__suptitle
@@ -595,7 +648,7 @@
       margin-bottom: 16px
       &:last-child
         margin-bottom: 0
-  
+
   .sponsors
     &__item
       margin-right: 16px
@@ -668,7 +721,6 @@
       &__image
         margin-bottom: 12px
 
-  
   .plan
     padding-bottom: 40px
     &-bottom
@@ -731,10 +783,6 @@
       font-size: 16px
       line-height: 28px
       text-align: center
-      
-
-
-
 
 @media (max-width: 575px)
   .hero
@@ -749,11 +797,13 @@
     &-link
       font-size: 16px
       line-height: 22px
+
   .mmenu
     &--visible
       width: 100%
       right: 0
       top: 11px
+
   .install
     padding-top: 80px
     &__suptitle
@@ -791,11 +841,11 @@
         line-height: 20px
         &:last-child
           margin-bottom: 0
-  
+
   .information
     &-bottom
       padding-top: 118px
-  
+
   .sponsors
     padding-top: 85px
     padding-bottom: 64px
@@ -922,7 +972,6 @@
       line-height: 20px
     &-copyright
       display: none
-
 
   .plan
     padding-top: 40px
