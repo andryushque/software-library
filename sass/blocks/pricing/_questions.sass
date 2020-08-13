@@ -1,0 +1,72 @@
+.questions
+  padding-top: 148px
+  padding-bottom: 48px
+  &-wrapper
+    padding-left: 90px
+    padding-right: 90px
+
+  &-title
+    font-family: "HKGrotesk", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #183B56
+  &__title
+    margin-top: 0
+    margin-bottom: 64px
+
+  &-accordion
+    &__block
+      margin-bottom: 16px
+      &:last-child
+        margin-bottom: 0
+
+  .tab
+    padding: 35px 32px 33px
+    background: $light
+    border: 1px solid #E5EAF4
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03)
+    border-radius: 8px
+    input, &-content
+      display: none
+    &-title
+      position: relative
+      display: block
+      font-family: "HKGrotesk", sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.1px
+      color: $dark
+      cursor: pointer
+      &::after
+        content: '+'
+        position: absolute
+        bottom: -2px
+        right: -2px
+        font-style: normal
+        font-weight: 900
+        font-size: 24px
+        color: $dark
+    &-content
+      padding-top: 12px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: #5A7184
+
+    & :checked + .tab-title
+      font-weight: bold
+      letter-spacing: 0.2px
+      color: $primary
+    & :checked + .tab-title::after 
+      content: '−'
+      color: #005AED
+    & :checked ~ .tab-content
+      display: block
+      margin-bottom: -4px
