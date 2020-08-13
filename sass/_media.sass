@@ -357,6 +357,7 @@
       border-bottom: none
     &-button
       min-width: 200px
+      max-width: 248px
       border-radius: 8px
 
 
@@ -369,9 +370,14 @@
       padding-top: 0
     &__logo
       margin-left: 8px
+      &--light
+        margin-left: 4px
   .mmenu
     &-button
       margin-right: 8px
+      &--light
+        margin-right: 8px
+        margin-top: 0
   .hero
     background-position: center -740px
     &-wrapper
@@ -618,6 +624,12 @@
       &__image
         margin-bottom: 12px
 
+  
+  .plan
+    &-card
+      padding: 30px 20px 24px
+    &-info
+      max-width: 100% 
 
 @media (max-width: 575px)
   .hero
@@ -805,3 +817,88 @@
       line-height: 20px
     &-copyright
       display: none
+
+
+  .plan
+    padding-top: 40px
+    &-title
+      font-size: 32px
+      line-height: 40px
+    &__title
+      margin-bottom: 16px
+    &-subtitle
+      max-width: 95%
+      font-size: 16px
+      line-height: 28px
+    &__subtitle
+      margin-bottom: 36px
+    &-switch
+      padding-right: 8px
+      &__text
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+      &__button
+        width: 56px
+        height: 32px
+        margin-left: 12px
+        margin-right: 12px
+        &::after
+          top: 4px
+          left: 4px
+          height: 24px
+          width: 24px
+        &--on
+          &::after
+            left: 26px
+      &__save
+        font-size: 14px
+        line-height: 20px
+    &__switch
+      margin-bottom: 60px
+    &-cards
+      padding-left: 0
+      padding-right: 0
+    &-card
+      min-height: 288px
+      flex-direction: column
+      &__main
+        width: 100%
+        margin-top: 0
+      &__advantages
+        width: 100%
+        margin-top: 0
+        margin-bottom: 32px
+        padding-left: 0
+      &__price
+        margin-bottom: 10px
+    &__card
+      margin-bottom: 16px
+      &:last-child
+        margin-bottom: 0
+    &__period
+      margin-bottom: -6px
+    &-name
+      margin-bottom: 8px
+      font-size: 20px
+    &__name
+      line-height: 24px
+    &-info
+      padding-bottom: 24px
+      border-bottom: 1px solid #E5EAF4
+      font-size: 14px
+      line-height: 24px
+    &__info
+      margin-bottom: 24px
+    &-advantage
+      &__text
+        font-size: 14px
+        line-height: 20px
+    &__advantage
+      margin-bottom: 16px
+      &:last-child
+        margin-bottom: 0
+    &-button
+      min-height: 40px
+      padding-left: 16px
+      padding-right: 18px
