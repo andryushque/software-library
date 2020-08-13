@@ -318,6 +318,19 @@
 
 
   .plan
+    position: relative
+    padding-bottom: 16px
+    z-index: -5
+    &-wrapper
+      position: relative
+      z-index: -3
+    &-bottom
+      position: absolute
+      z-index: -4
+      left: 0
+      right: 0
+      bottom: 0
+      background: url(../images/background-plan.png) center top no-repeat
     &-title
       font-size: 48px
       line-height: 60px
@@ -359,6 +372,37 @@
       min-width: 200px
       max-width: 248px
       border-radius: 8px
+
+
+  .premium
+    padding-top: 105px
+    &-suptitle
+      font-size: 14px
+      line-height: 20px
+      color: #36B37E
+    &__suptitle
+      margin-right: 10px
+    &-title
+      font-size: 32px
+      line-height: 40px
+      max-width: 455px
+    &__title
+      margin-bottom: 66px
+      margin-right: 10px
+    &-cards
+      flex-direction: column
+      padding: 0 86px
+    &-card
+      width: 100%
+      padding: 0
+      &:nth-child(even)
+        padding: 0
+    &__card
+      margin-bottom: 33px
+      &:nth-child(-n+2)
+        margin-bottom: 33px
+      &:last-child
+        margin-bottom: 0
 
 
 @media (max-width: 767px)
