@@ -16,6 +16,14 @@
       padding-left: 0
 
 
+  .plan
+    &-cards
+      padding-left: 0
+      padding-right: 0
+    &-card
+      width: 300px
+      padding: 42px 24px 40px
+
 @media (max-width: 991px)
   .container
     max-width: 704px
@@ -27,6 +35,9 @@
     &__logo
       width: 77px
       margin-left: 27px
+      &--light
+        width: 90px
+        margin-left: 21px
     &-menu
       display: none
     &__navbar
@@ -69,6 +80,8 @@
       display: flex
     &-button
       display: flex
+      &--light
+        margin-top: -5px
   
   .install
     padding-top: 70px
@@ -302,6 +315,49 @@
         margin-bottom: 48px
     &__main
       margin-bottom: 62px
+
+
+  .plan
+    &-title
+      font-size: 48px
+      line-height: 60px
+    &-subtitle
+      font-size: 20px
+      line-height: 36px
+    &__subtitle
+      margin-bottom: 32px
+    &__switch
+      margin-bottom: 72px
+    &-cards
+      padding-left: 27px
+      padding-right: 27px
+      flex-direction: column
+      flex-wrap: wrap
+    &-card
+      width: 100%
+      min-height: 338px
+      padding: 48px 36px
+      flex-direction: row
+      justify-content: space-between
+      flex-wrap: wrap
+      &__main
+        width: 50%
+        margin-top: -6px
+      &__advantages
+        width: 50%
+        margin-top: -4px
+        padding-left: 16px 
+    &__card
+      margin-bottom: 24px
+      &:last-child
+        margin-bottom: 0
+    &-info
+      max-width: 248px
+      padding-bottom: 0
+      border-bottom: none
+    &-button
+      min-width: 200px
+      border-radius: 8px
 
 
 @media (max-width: 767px)
