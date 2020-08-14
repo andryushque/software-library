@@ -147,4 +147,16 @@ $(document).ready(function () {
       $(this).triggerHandler("click", false);
     });
   });
+
+  /*=== Disable Hover Effect ===*/
+  $(window).resize(function () {
+    if ($(window).width() > 991) {
+      $(".button").addClass("button--hover");
+      $(".a-link").addClass("a-link--hover");
+    }
+    if ($(window).width() <= 991) {
+      $(".button").removeClass("button--hover");
+      $(".a-link").removeClass("a-link--hover");
+    }
+  });
 });

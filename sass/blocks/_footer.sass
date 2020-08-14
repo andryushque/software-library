@@ -46,14 +46,17 @@
       margin-right: 7px
       background: rgba(#5A7184, 0.1)
       text-decoration: none
-      &:hover
-        background: $primary
-        transition: background 0.3s ease
-        .footer
-          &__social
-            &-icon
-              fill: $light
-              transition: fill 0.3s ease
+      &.a-link
+        text-decoration: none
+      &.a-link--hover
+        &:hover
+          background: $primary
+          transition: background 0.3s ease
+          .footer
+            &__social
+              &-icon
+                fill: $light
+                transition: fill 0.3s ease
     &-icon
       fill: #5A7184
   &-logo

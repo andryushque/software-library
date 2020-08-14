@@ -210,15 +210,16 @@
     line-height: 22px
     color: $primary
     background-color: $light
-    &:hover, &:active
-      color: $light
-      background-color: $primary
-      transition: background-color 0.3s ease, color 0.3s ease
-      .plan
-        &-button
-          &__icon
-            fill: $light
-            transition: fill 0.3s ease
+    &.button--hover
+      &:hover, &:active
+        color: $light
+        background-color: $primary
+        transition: background-color 0.3s ease, color 0.3s ease
+        .plan
+          &-button
+            &__icon
+              fill: $light
+              transition: fill 0.3s ease
   &__button
     margin-top: auto
     margin-bottom: 0

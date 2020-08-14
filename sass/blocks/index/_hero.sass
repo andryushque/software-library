@@ -67,15 +67,16 @@
     &--light
       color: $primary
       background-color: $light
-      &:hover, &:active
-        color: $light
-        background-color: transparent
-        transition: background-color 0.3s ease, color 0.3s ease
-        .hero
-          &-button
-            &__icon
-              fill: $light
-              transition: fill 0.3s ease
+      &.button--hover
+        &:hover, &:active
+          color: $light
+          background-color: transparent
+          transition: background-color 0.3s ease, color 0.3s ease
+          .hero
+            &-button
+              &__icon
+                fill: $light
+                transition: fill 0.3s ease
       .hero
         &-button
           &__icon
@@ -86,15 +87,16 @@
     &--transparent
       color: $light
       background-color: transparent
-      &:hover, &:active
-        color: $primary
-        background-color: $light
-        transition: background-color 0.3s ease, color 0.3s ease
-        .hero
-          &-button
-            &__icon
-              fill: $primary
-              transition: fill 0.3s ease
+      &.button--hover
+        &:hover, &:active
+          color: $primary
+          background-color: $light
+          transition: background-color 0.3s ease, color 0.3s ease
+          .hero
+            &-button
+              &__icon
+                fill: $primary
+                transition: fill 0.3s ease
       .hero
         &-button
           &__icon

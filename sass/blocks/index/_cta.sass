@@ -44,6 +44,7 @@
           &__text
             margin-left: 5px
             margin-right: -10px
+    &.button--hover
       &:hover, &:active
         background-color: transparent
         color: $light
@@ -65,12 +66,13 @@
             fill: $light
           &__text
             margin-right: 10px
-      &:hover, &:active
-        background-color: $light
-        color: $dark
-        transition: background-color 0.3s ease, color 0.3s ease
-        .cta
-          &-button
-            &__icon
-              fill: $dark
-              transition: fill 0.3s ease
+      &.button--hover
+        &:hover, &:active
+          background-color: $light
+          color: $dark
+          transition: background-color 0.3s ease, color 0.3s ease
+          .cta
+            &-button
+              &__icon
+                fill: $dark
+                transition: fill 0.3s ease
