@@ -26,7 +26,17 @@
       width: 300px
       padding: 42px 24px 40px
 
+
 @media (max-width: 991px)
+  @media (pointer:coarse)
+    a
+      &:hover
+        text-decoration: none
+        outline: none
+    button
+      &:hover, &:focus
+        outline: none
+
   .container
     max-width: 704px
 
@@ -854,6 +864,7 @@
 
     &-bottom
       display: none
+
 
 @media (max-width: 575px)
   .hero
