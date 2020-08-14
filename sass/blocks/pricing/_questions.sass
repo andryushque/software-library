@@ -17,6 +17,7 @@
     text-align: center
     letter-spacing: 0.2px
     color: #183B56
+    word-break: break-word
   &__title
     margin-top: 0
     margin-bottom: 64px
@@ -47,6 +48,7 @@
       padding-right: 32px
       color: $dark
       cursor: pointer
+      word-break: break-word
       &::after
         content: '+'
         position: absolute
@@ -64,6 +66,7 @@
       font-size: 18px
       line-height: 32px
       color: #5A7184
+      word-break: break-word
 
     & :checked + .tab-title
       font-weight: bold
@@ -90,6 +93,7 @@
       text-align: center
       letter-spacing: 0.2px
       color: $dark
+      word-break: break-word
     &__title
       margin-top: 0
       margin-bottom: 16px
@@ -101,6 +105,7 @@
       line-height: 32px
       text-align: center
       color: #5A7184
+      word-break: break-word
     &__info
       margin-top: 2px
       margin-bottom: 62px
@@ -108,7 +113,7 @@
     &-cards
       display: flex
       justify-content: center
-      align-items: center
+      flex: 1 0 auto
       width: 100%
     &-card
       display: flex
@@ -141,6 +146,7 @@
       letter-spacing: 0.2px
       color: #183B56
       text-decoration: none
+      word-break: break-word
       &:hover
         text-decoration: underline
     &__text
@@ -152,3 +158,4 @@
       line-height: 28px
       text-align: center
       color: #5A7184
+      word-break: break-word
