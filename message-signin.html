@@ -419,6 +419,7 @@
     </section>
     <!-- /.message -->
 
+    <!-- Модальное окно -->
     <div class="modal" id="modal-signin">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
@@ -427,69 +428,34 @@
           <img src="images/icons/close.png" alt="Icon: close" />
         </a>
         <h3 class="modal__title">Let’s join us</h3>
-        <a href="#" class="button modal__button modal__button--google">
-          <img
-            src="images/icons/google-icon.png"
-            alt="Icon: Google"
-            class="modal__icon"
-          />
+        <a href="#" class="button button--hover modal__button modal__button--google">
+          <img src="images/icons/google-icon.png" alt="Icon: Google" class="modal__icon" />
           <span class="button__text">
             Sign up with Google
           </span>
         </a>
         <span class="modal__line">Or, sign up with your email</span>
-        <form
-          action="send.php"
-          method="POST"
-          class="modal-form modal__form form"
-        >
-          <label for="modal-input" class="label modal__label">Your name*</label>
-          <input
-            type="text"
-            id="modal-input"
-            class="input modal__input"
-            placeholder="Enter name"
-            name="name"
-            minlength="2"
-            required
-          />
-          <label for="modal-email" class="label modal__label"
-            >Email address*</label
-          >
-          <input
-            type="email"
-            id="modal-email"
-            class="input modal__input"
-            placeholder="Enter email address"
-            name="email"
-            required
-          />
-          <label for="modal-password" class="label modal__label"
-            >Password*</label
-          >
-          <input
-            type="password"
-            id="modal-password"
-            class="input modal__input"
-            placeholder="Enter password"
-            name="password"
-            required
-          />
+        <form action="send.php" method="POST" class="modal-form modal__form form">
+          <div class="modal__input-group">
+            <label for="modal-input" class="label modal__label">Your name*</label>
+            <input type="text" id="modal-input" class="input modal__input" placeholder="Enter name" name="name"
+              minlength="2" required />
+          </div>
+          <div class="modal__input-group">
+            <label for="modal-email" class="label modal__label">Email address*</label>
+            <input type="email" id="modal-email" class="input modal__input" placeholder="Enter email address" name="email"
+              required />
+          </div>
+          <div class="modal__input-group">
+            <label for="modal-password" class="label modal__label">Password*</label>
+            <input type="password" id="modal-password" class="input modal__input" placeholder="Enter password"
+              name="password" minlength="8" required />
+          </div>
           <p class="modal__checkbox-terms">
-            <input
-              class="modal__checkbox"
-              type="checkbox"
-              name="terms"
-              required
-            />
-            <span class="modal__terms">Agree to terms & conditions</span>
+            <input class="modal__checkbox" id="checkbox-terms" type="checkbox" name="terms" required />
+            <label for="checkbox-terms" class="modal__terms">Agree to terms & conditions</label>
           </p>
-          <button
-            class="button modal__button"
-            type="submit"
-            name="form"
-            value="form-modal-signin"
-          >
+          <button class="button button--hover modal__button" type="submit" name="form" value="form-modal-signin">
             <span class="button__text">Sign up</span>
           </button>
           <div class="modal-form__bottom">

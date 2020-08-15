@@ -1526,39 +1526,47 @@
           method="POST"
           class="modal-form modal__form form"
         >
-          <label for="modal-input" class="label modal__label">Your name*</label>
-          <input
-            type="text"
-            id="modal-input"
-            class="input modal__input"
-            placeholder="Enter name"
-            name="name"
-            minlength="2"
-            required
-          />
-          <label for="modal-email" class="label modal__label"
-            >Email address*</label
-          >
-          <input
-            type="email"
-            id="modal-email"
-            class="input modal__input"
-            placeholder="Enter email address"
-            name="email"
-            required
-          />
-          <label for="modal-password" class="label modal__label"
-            >Password*</label
-          >
-          <input
-            type="password"
-            id="modal-password"
-            class="input modal__input"
-            placeholder="Enter password"
-            name="password"
-            minlength="8"
-            required
-          />
+          <div class="modal__input-group">
+            <label for="modal-input" class="label modal__label"
+              >Your name*</label
+            >
+            <input
+              type="text"
+              id="modal-input"
+              class="input modal__input"
+              placeholder="Enter name"
+              name="name"
+              minlength="2"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <label for="modal-email" class="label modal__label"
+              >Email address*</label
+            >
+            <input
+              type="email"
+              id="modal-email"
+              class="input modal__input"
+              placeholder="Enter email address"
+              name="email"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <label for="modal-password" class="label modal__label"
+              >Password*</label
+            >
+            <input
+              type="password"
+              id="modal-password"
+              class="input modal__input"
+              placeholder="Enter password"
+              name="password"
+              minlength="8"
+              required
+            />
+          </div>
           <p class="modal__checkbox-terms">
             <input
               class="modal__checkbox"
