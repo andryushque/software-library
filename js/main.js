@@ -148,6 +148,22 @@ $(document).ready(function () {
     });
   });
 
+  /*=== To Top Button ===*/
+  var btn = $(".top-button");
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 500) {
+      btn.addClass("show");
+    } else {
+      btn.removeClass("show");
+    }
+  });
+
+  btn.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "300");
+  });
+
   /*=== Disable Hover Effect ===*/
   $(window).resize(function () {
     if ($(window).width() > 991) {
