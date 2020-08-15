@@ -102,6 +102,8 @@
     &::after
       right: -72px
 
+  &__input-group
+    margin-bottom: 24px
   &-form
     display: flex
     flex-direction: column
@@ -111,7 +113,7 @@
       align-items: center
       justify-content: flex-start
   &__label
-    margin-top: 24px
+    display: inline-block
     margin-bottom: 12px
     font-style: normal
     font-weight: 600
@@ -139,7 +141,7 @@
     position: relative
     display: flex
     align-items: center
-    margin-top: 24px
+    margin-top: 0
     margin-bottom: 32px
   &__checkbox
     background: $light
@@ -147,6 +149,7 @@
     box-sizing: border-box
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.16)
     border-radius: 4px
+    cursor: pointer
   &__terms
     margin-left: 10px
     font-style: normal
@@ -154,6 +157,7 @@
     font-size: 14px
     line-height: 20px
     color: #5A7184
+    cursor: pointer
     word-break: break-word
   &__info
     margin-right: 8px

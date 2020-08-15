@@ -73,9 +73,14 @@ img
     word-break: break-word
 
 /*=== Валидация форм ===*/
+.modal
+  &__input-group
+    position: relative
 label
   &.invalid
-    margin-top: 3px
+    position: absolute
+    bottom: -18px
+    left: 0
     font-size: 12px
     color: $text-warning
     word-break: break-word
