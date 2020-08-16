@@ -76,16 +76,16 @@ $(document).ready(function () {
     loop: true,
     speed: 500,
 
-    /* autoplay: {
+    autoplay: {
       delay: 5000,
-    }, */
+    },
 
     keyboard: {
       enabled: true,
     },
   });
 
-  $("swiper-container").hover(
+  $(".swiper-container").hover(
     function () {
       reviewsSwiper.autoplay.stop();
     },
