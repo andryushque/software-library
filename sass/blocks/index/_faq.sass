@@ -116,7 +116,9 @@
         border-top: none
     &-title
       position: relative
-      display: block
+      display: flex
+      justify-content: space-between
+      align-items: center
       padding-top: 26px
       padding-bottom: 12px
       font-family: 'Open Sans', sans-serif
@@ -129,15 +131,15 @@
       word-break: break-word
       background-color: transparent
       border-top: 1px solid rgba(#E5EAF4, 0.7)
-      &::after
-        content: '+'
-        position: absolute
-        bottom: 12px
-        right: 0
-        font-style: normal
-        font-weight: 900
-        font-size: 20px
-        color: $primary
+      .fa-minus, .fa-plus
+        width: 11px
+      .fa-minus
+        display: none
+      .fa-plus
+        display: block
+      &__icon
+        fill: $primary
+
     &-content
       font-style: normal
       font-weight: normal
@@ -153,7 +155,9 @@
       font-size: 20px
       line-height: 24px
       letter-spacing: 0.2px
-    & :checked + .tab-title::after 
-      content: '−'
+      .fa-minus
+        display: block
+      .fa-plus
+        display: none
     & :checked ~ .tab-content
       display: block
