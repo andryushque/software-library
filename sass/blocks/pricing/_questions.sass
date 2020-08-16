@@ -38,27 +38,31 @@
       display: none
     &-title
       position: relative
-      display: block
+      display: flex
+      justify-content: space-between
+      align-items: center
       font-family: "HKGrotesk", sans-serif
       font-style: normal
       font-weight: 600
       font-size: 20px
       line-height: 24px
-      letter-spacing: 0.1px
-      padding-right: 32px
+      letter-spacing: 0.2px
       color: $dark
       cursor: pointer
       word-break: break-word
-      &::after
-        content: '+'
-        position: absolute
-        top: 50%
-        right: -2px
-        transform: translateY(-50%)
-        font-style: normal
-        font-weight: 900
-        font-size: 24px
-        color: $dark
+      .fa-minus, .fa-plus
+        max-width: 13px
+        margin-top: 8px
+        margin-left: 32px
+      .fa-minus
+        display: none
+      .fa-plus
+        display: block
+      &__icon
+        &--minus
+          fill: $primary
+        &--plus
+          fill: $dark
     &-content
       padding-top: 12px
       font-style: normal
@@ -72,9 +76,10 @@
       font-weight: bold
       letter-spacing: 0.2px
       color: $primary
-    & :checked + .tab-title::after 
-      content: '−'
-      color: #005AED
+      .fa-minus
+        display: block
+      .fa-plus
+        display: none
     & :checked ~ .tab-content
       display: block
       margin-bottom: -4px
